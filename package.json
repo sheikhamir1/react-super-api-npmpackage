@@ -1,5 +1,5 @@
 {
-  "name": "@amir/react-super-api",
+  "name": "@amirsohail1/react-super-api",
   "version": "1.0.0",
   "description": "This is a simple library to fetch, post, update, and delete data...",
   "main": "dist/index.js",
