@@ -1,7 +1,7 @@
 {
   "name": "@amirsohail1/react-super-api",
   "version": "1.0.1",
-  "description": "This is a simple library to fetch, post, update, and delete data...",
+  "description": "react-super-api allows you to easily fetch, send, update, and delete data from any database with minimal code. No need to manage useState or useEffect",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
@@ -19,5 +19,15 @@
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1"
-  }
+  },
+  "keywords": [
+    "react",
+    "api",
+    "fetch",
+    "post",
+    "update",
+    "delete",
+    "react-api",
+    "react-super-api"
+  ]
 }
