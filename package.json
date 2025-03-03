@@ -1,6 +1,6 @@
 {
   "name": "@amirsohail1/react-super-api",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.1",
   "description": "This is a simple library to fetch, post, update, and delete data...",
   "main": "dist/index.js",
   "module": "dist/index.js",
