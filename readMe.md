@@ -31,19 +31,15 @@ Wrap your application with the `Wrapper` component to initialize the library.
 Make sure to wrap your main file (where you render your React app):
 
 ```jsx
-import React from "react";
+import { createRoot } from "react-dom/client";
 import { Wrapper } from "@amirsohail1/react-super-api";
-import App from "./App";
+import App from "./App.jsx";
 
-const Root = () => {
-  return (
-    <Wrapper>
-      <App />
-    </Wrapper>
-  );
-};
-
-export default Root;
+createRoot(document.getElementById("root")).render(
+  <Wrapper>
+    <App />
+  </Wrapper>
+);
 ```
 
 ---
