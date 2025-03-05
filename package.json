@@ -1,6 +1,6 @@
 {
   "name": "@amirsohail1/react-super-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-super-api allows you to easily fetch, send, update, and delete data from any database with minimal code. No need to manage useState or useEffect",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -29,5 +29,9 @@
     "delete",
     "react-api",
     "react-super-api"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheikhamir1/react-super-api-npmpackage.git"
+  }
 }
