@@ -1,6 +1,6 @@
 {
-  "name": "@amirsohail/react-super-api",
-  "version": "1.0.3",
+  "name": "@amirsohail1/react-super-api",
+  "version": "1.0.4",
   "description": "react-super-api allows you to easily fetch, send, update, and delete data from any database with minimal code. No need to manage useState or useEffect",
   "main": "dist/index.js",
   "module": "dist/index.js",
