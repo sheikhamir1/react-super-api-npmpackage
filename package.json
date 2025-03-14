@@ -19,6 +19,8 @@
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1"
   },
+  "author": "amir sohail shiek",
+  "license": "ISC",
   "keywords": [
     "react",
     "api",

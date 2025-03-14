@@ -1,8 +1,8 @@
 # React Super API
 
-![Node Super Logger](https://img.shields.io/npm/v/@amirsohail1/node-super-logger?style=flat-square)
-![License](https://img.shields.io/npm/l/@amirsohail1/node-super-logger?style=flat-square)
-![Downloads](https://img.shields.io/npm/dt/@amirsohail1/node-super-logger?style=flat-square)
+![Node Super Logger](https://img.shields.io/npm/v/@amirsohail1/react-super-api?style=flat-square)
+![License](https://img.shields.io/npm/l/@amirsohail1/react-super-api?style=flat-square)
+![Downloads](https://img.shields.io/npm/dt/@amirsohail1/react-super-api?style=flat-square)
 
 🚀 **Welcome Developers!**
 
