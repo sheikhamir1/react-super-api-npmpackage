@@ -1,5 +1,9 @@
 # React Super API
 
+![Node Super Logger](https://img.shields.io/npm/v/@amirsohail1/node-super-logger?style=flat-square)
+![License](https://img.shields.io/npm/l/@amirsohail1/node-super-logger?style=flat-square)
+![Downloads](https://img.shields.io/npm/dt/@amirsohail1/node-super-logger?style=flat-square)
+
 🚀 **Welcome Developers!**
 
 `react-super-api` allows you to easily fetch, send, update, and delete data from any database with minimal code. No need to manage `useState` or `useEffect`—our library handles everything efficiently using **TanStack Query** under the hood.
