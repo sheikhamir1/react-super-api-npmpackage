@@ -6,7 +6,12 @@ export function useGetData({ name, url, options = {} }) {
       const response = await fetch(url);
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        const error = await response.json();
+        throw new Error(
+          `HTTP error! status: ${error.status} ${
+            error.message || error.message
+          }`
+        );
       }
 
       // console.log(response);
