@@ -187,6 +187,16 @@ const DeleteUser = () => {
 
 ---
 
+# New Update in version: "1.3.6"
+
+Now when use `useSendData` , `useUpdateData` , `useDeleteData` you should see the promise success or fail massage
+
+---
+
+Also you can now Get `isError` & `isSuccess` form `useSendData` , `useUpdateData` , `useDeleteData` that return boolean value
+
+---
+
 ## 🎯 Why Use `react-super-api`?
 
 ✔ **Minimal Boilerplate** – Fetch, send, update, and delete data in just 1-2 lines of code.  

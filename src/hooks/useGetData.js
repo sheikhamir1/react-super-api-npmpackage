@@ -6,10 +6,11 @@ export function useGetData({ name, url, options = {} }) {
       const response = await fetch(url);
 
       if (!response.ok) {
-        const error = await response.json();
+        // Attempt to parse the response body for an error message
+        const errorData = await response.json();
         throw new Error(
-          `HTTP error! status: ${error.status} ${
-            error.message || error.message
+          ` Status:${response.status}, Message: ${
+            errorData.message || errorData.error
           }`
         );
       }
@@ -17,7 +18,8 @@ export function useGetData({ name, url, options = {} }) {
       // console.log(response);
       return response.json();
     } catch (error) {
-      console.log(`Something went wrong: ${error}`);
+      console.log(`Error!: ${error}`);
+      throw error;
     }
   };
 

@@ -16,10 +16,11 @@ export function useUpdateData({ name, url }) {
       // );
 
       if (!response.ok) {
-        const error = await response.json();
+        // Attempt to parse the response body for an error message
+        const errorData = await response.json();
         throw new Error(
-          `HTTP error! status: ${error.status} ${
-            error.message || error.message
+          ` Status:${response.status}, Message: ${
+            errorData.message || errorData.error
           }`
         );
       }
@@ -27,18 +28,22 @@ export function useUpdateData({ name, url }) {
       //   console.log(response);
       return response.json();
     } catch (error) {
-      console.log(`Something went wrong: ${error}`);
+      console.log(`Error!: ${error}`);
+      throw error;
     }
   };
 
-  const { mutate, data, isPending, error } = useMutation({
+  const { mutate, data, isPending, error, isError, isSuccess } = useMutation({
     mutationKey: [name],
     mutationFn: (data) => updateData(data),
     onSuccess: () => {
-      // console.log("Data sent successfully");
+      console.log("Promise successful");
+    },
+    onError: () => {
+      console.log("Promise failed");
     },
   });
   // console.log("checkpoint three: chekcing data after sending to fetch" , data);
 
-  return { mutate, data, isPending, error };
+  return { mutate, data, isPending, error, isError, isSuccess };
 }
