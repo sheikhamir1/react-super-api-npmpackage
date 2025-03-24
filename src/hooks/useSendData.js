@@ -7,9 +7,9 @@ export function useSendData({ name, url }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          withCredentials: "true",
         },
         body: JSON.stringify(data),
+        credentials: "include",
       });
       // console.log(
       //   "checkpoint two: chekcing data before sending to fetch",
