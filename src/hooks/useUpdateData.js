@@ -7,6 +7,7 @@ export function useUpdateData({ name, url }) {
         method: "PUT ",
         headers: {
           "Content-Type": "application/json",
+          withCredentials: "true",
         },
         body: JSON.stringify(data),
       });

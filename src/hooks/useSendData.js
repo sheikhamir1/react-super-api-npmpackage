@@ -7,6 +7,7 @@ export function useSendData({ name, url }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          withCredentials: "true",
         },
         body: JSON.stringify(data),
       });
