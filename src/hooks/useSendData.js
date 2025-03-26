@@ -5,11 +5,11 @@ export function useSendData({ name, url }) {
     try {
       const response = await fetch(url, {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-        credentials: "include",
       });
       // console.log(
       //   "checkpoint two: chekcing data before sending to fetch",

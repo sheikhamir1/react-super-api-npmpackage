@@ -5,6 +5,7 @@ export function useUpdateData({ name, url }) {
     try {
       const response = await fetch(url, {
         method: "PUT ",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },

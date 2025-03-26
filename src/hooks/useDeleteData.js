@@ -5,9 +5,9 @@ export function useDeleteData({ name, url }) {
     try {
       const response = await fetch(url, {
         method: "DELETE",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
-          credentials: "include",
         },
       });
       // console.log(

@@ -3,7 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 export function useGetData({ name, url, options = {} }) {
   const fetchData = async () => {
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        method: "GET",
+        credentials: "include",
+      });
 
       if (!response.ok) {
         // Attempt to parse the response body for an error message
